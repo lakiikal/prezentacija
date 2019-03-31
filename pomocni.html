@@ -10,6 +10,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Document</title>
+    <style>
+        .row div {
+            height: 250px;
+            background-color: chocolate;
+            border: solid black 2px;
+            border-collapse: collapse
+        }
+    </style>
 </head>
 
 <body>
@@ -21,10 +29,13 @@
     <p>treci fajl na Githubu.</p>
     <div class="container">
         <div class="row">
-            <div>prvi</div>
-            <div>drugi</div>
-            <div>treci</div>
-            <div>cetvrti</div>
+            <div class="col-md-4 offset-md-1">prvi</div>
+            <div class="col-md-4 offset-md-2">drugi</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-1">treci</div>
+            <div class="col-md-4 offset-md-2">cetvrti</div>
+            
         </div>
     </div>
 </body>
